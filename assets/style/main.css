@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/*!
+global
+------------------------------
+*/
+
+/* color */
+:root {
+  --color-bg-primary: ;
+  --color-bg-white: #ffffff;
+  --color-font-base: ;
+  --color-border-base: ;
+}
+/* content-width */
+:root {
+  --width-content-s: ;
+  --width-content: ;
+}
+
+/* font */
+:root {
+  --font-family-base: "Noto Serif JP", serif;
+  --font-family-en: "Montserrat", sans-serif;
+}
+
+/*!
+foundation > base
+------------------------------
+*/
+body {
+  color: ;
+  font-family: ;
+  font-size: ;
+  line-height: ;
+  letter-spacing: ;
+}
+@media screen and (min-width: 768px) {
+  body {
+      font-size: ;
+  }
+}
+/*!
+component > button
+------------------------------
+*/
+
+/*💡ここに『ボタンコンポーネントのコード』を書く*/
+
+/*!
+component > title
+------------------------------
+*/
+
+/*💡ここに『タイトルコンポーネントのコード』を書く*/
+
+/*!
+component > cta
+------------------------------
+*/
+
+/*💡ここに『CTAコンポーネントのコード』を書く*/
+
+/*!
+layout > container
+------------------------------
+*/
+.l-container, .l-container-s {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.l-container-s {
+  max-width: var(--width-content-s);
+}
+
+.l-container {
+  max-width: var(--width-content);
+}
+
+/*!
+layout > section
+------------------------------
+*/
+.l-section {
+  padding: 64px 0;
+}
+@media screen and (min-width: 768px) {
+  .l-section {
+    padding: 96px 0;
+  }
+}
+
+/*!
+layout > section-body
+------------------------------
+*/
+.l-section-body {
+  margin-top: 32px;
+}
+@media screen and (min-width: 768px) {
+  .l-section-body {
+    margin-top: 40px;
+  }
+}
+
+/*!
+layout > header
+------------------------------
+*/
+
+/*💡ここに『ヘッターのコード』を書く*/
+
+/*!
+layout > footer
+------------------------------
+*/
+
+/*💡ここに『フッターのコード』を書く*/
