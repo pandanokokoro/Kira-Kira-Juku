@@ -7,21 +7,27 @@ global
 
 /* color */
 :root {
-  --color-bg-primary: ;
-  --color-bg-white: #ffffff;
-  --color-font-base: ;
-  --color-border-base: ;
+  --color-bg-blue:#005bac ;
+  --color-bg-white: #fff;
+  --color-bg-light-pink:#ff55551a;
+  --color-bg-light-blue: #f2f9ff;
+  --color-bg-light-grey: #f0f0f0;
+  --color-bg-grey: #ddd;
+
+  --color-font-blue: #005bac;
+  --color-font-black: #333;
+  --color-font-white: #fff;
+  --color-font-pink: #f11f8d;
 }
 /* content-width */
 :root {
-  --width-content-s: ;
-  --width-content: ;
+  --width-content: 1160px;
 }
 
 /* font */
 :root {
-  --font-family-base: "Noto Serif JP", serif;
-  --font-family-en: "Montserrat", sans-serif;
+  --font-family-base: "Noto Sans JP", sans-serif;
+  --font-family-en: "Poppins", sans-serif;
 }
 
 /*!
@@ -29,30 +35,79 @@ foundation > base
 ------------------------------
 */
 body {
-  color: ;
-  font-family: ;
-  font-size: ;
-  line-height: ;
-  letter-spacing: ;
-}
-@media screen and (min-width: 768px) {
-  body {
-      font-size: ;
-  }
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+  line-height: 1.75;
 }
 /*!
 component > button
 ------------------------------
 */
+.c-button__base {
+  cursor: pointer;
+  width: 250px;
+  height: 48px;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  color: var(--color-font-white);
+}
+@media (min-width:765px) {
+  .c-button__base {
+    width: 340px;
+    height: 75px;
+    border-radius: 38px;
+  }
+}
+.c-button__base:hover {
+  opacity: .6;
+}
+.c-button__first {
+  background-color: #77cb33;
+}
+.c-button__second {
+  background-color: #f6aa00;
+}
+.c-button__third {
+  background-color: #3ac8ad;
+}
+.c-button__cta {
+  width: 305px;
+  height: 69px;
+  border-radius: 35px;
+  background: transparent linear-gradient(90deg, #0271E0 0%, #53A2F0 100%) 0% 0% no-repeat padding-box;
+  font-size: 20px;
+}
+@media (min-width:765px) {
+  .c-button__cta {
+    width: 360px;
+    height: 75px;
+    border-radius: 38px;
+  }
+}
+.c-button__header {
 
-/*💡ここに『ボタンコンポーネントのコード』を書く*/
-
+}
+.c-button__center {
+  margin: 0 auto;
+}
 /*!
 component > title
 ------------------------------
 */
-
-/*💡ここに『タイトルコンポーネントのコード』を書く*/
+.c-title-level1__english {
+  font-family: var(--font-family-en);
+  color: var(--color-font-blue);
+  line-height: 0;
+}
+.c-title-level2 {
+  font-size: 28px;
+}
+.c-title-level3 {
+  font-size: 20px;
+}
 
 /*!
 component > cta
