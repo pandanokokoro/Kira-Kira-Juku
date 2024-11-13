@@ -38,6 +38,8 @@ foundation > base
 */
 html {
     font-size: calc(10 * 100vw / 375);
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
 }
 
 @media (min-width:768px) {
@@ -67,9 +69,9 @@ component > button
 */
 .c-button__base {
     cursor: pointer;
-    width: 66.5vw;
-    height: 48px;
-    border-radius: 25px;
+    width: 25rem;
+    height: 4.8rem;
+    border-radius: 2.5rem;
     display: grid;
     place-items: center;
     font-size: 1.6rem;
@@ -78,10 +80,10 @@ component > button
 }
 @media (min-width:765px) {
     .c-button__base {
-        max-width: 340px;
-        height: 75px;
+        width: 34rem;
+        height: 7.5rem;
         border-radius: 38px;
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 }
 .c-button__base:hover {
@@ -128,13 +130,13 @@ component > title
 .c-title-level1__english {
     font-family: var(--font-family-en);
     color: var(--color-font-blue);
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: bold;
     line-height: 1;
 }
 @media (min-width: 768px) {
     .c-title-level1__english {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 }
 .c-title-level2 {
@@ -233,17 +235,25 @@ header
     box-shadow: 0px 2px 8px #0000001a;
     z-index: 10;
 }
+@media (min-width: 768px) {
+    .header {
+        padding: 0;
+        height: 101px;
+    }
+}
 .header-container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-@media (min-width: 768px) {
-    .header-site-title {
-        margin-left: 19%;
-    }
+    height: 100%;
 }
 .hamburger-button {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 70px;
     height: 70px;
     display: flex;
@@ -252,12 +262,104 @@ header
     gap: 9px;
     align-items: center;
     background-color: var(--color-bg-blue);
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .hamburger-button {
+        display: none;
+    }
 }
 .hamburger-button-bar {
     width: 30px;
     height: 3px;
     background-color: var(--color-bg-white);
 }
+.navigation-group {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    flex-grow: 1;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+}
+@media (min-width: 768px) {
+    .navigation-group {
+        flex-direction: row;
+        align-items: center;
+        transform: none;
+        position: static;
+        width: auto;
+    }
+}
+.navigation-group.active {
+    transform: translateX(0);
+    background-color: var(--color-bg-blue);
+}
+@media (max-width: 767px) {
+    .navigation-menu {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 32px;
+        color: var(--color-font-white);
+    }
+}
+
+@media (min-width:768px) {
+    .navigation-menu {
+        display: flex;
+        justify-content: right;
+        gap: 48px;
+        max-width: none;
+        margin: 0 48px 0 0;
+        font-size: 2rem;
+        color: var(--color-font-black);
+    }
+}
+
+@media (max-width: 767px) {
+    .navigation-item {
+        position: relative;
+        padding: 20px 0;
+        border-bottom: 1px solid #ffffff80;
+    }
+    .navigation-item a {
+        margin-left: 10px;
+    }
+    .navigation-item::before {
+        content: "→";
+    }
+}
+
+.header-button {
+    width: 100%;
+    max-width: 350px;
+    height: 6.6rem;
+    margin: 0 auto;
+    background: var(--color-bg-white);
+    color: var(--color-bg-blue);
+    border-radius: 3.3rem;
+}
+@media (min-width:768px) {
+    .header-button {
+        margin: 0;
+        width: 28.2rem;
+        height: 6.1rem;
+        border-radius: 31px;
+        font-size: 2rem;
+        color: var(--color-font-white);
+        background: transparent linear-gradient(90deg, #0271E0 0%, #53A2F0 100%) 0% 0% no-repeat padding-box;;
+    }
+}
+
 /*!
 main-visual
 ------------------------------
@@ -384,7 +486,7 @@ button-section
 .button-section {
     margin-top: 24px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
     .button-section {
         margin: -30px 0 24px;
     }
@@ -394,12 +496,14 @@ button-section
     flex-direction: column;
     gap: 12px;
 }
-@media (min-width:1400px) {
+@media (min-width:768px) {
     .button-section-container {
-        margin: 0 21% 1px;
+        max-width: 1100px;
+        margin: 0 auto;
         flex-direction: row;
         justify-content: left;
         gap: 40px;
+        overflow: hidden;
     }
     .button-section-container .c-button__base {
         flex-shrink: 0;
