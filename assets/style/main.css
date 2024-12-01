@@ -510,6 +510,9 @@ main-visual
     line-height: 1.44;
     color: var(--color-font-blue);
 }
+.main-visual-announce span {
+    display: block;
+}
 @media(min-width:768px) {
     .main-visual-announce {
         font-size: 6rem;
