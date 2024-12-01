@@ -17,7 +17,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.min.css">
@@ -31,7 +31,7 @@
         <div class="header-container">
             <div class="header-site-title">
                 <a href="/">
-                    <img src="/assets/image/logo.svg.svg" alt="Kira-Kira Juku">
+                    <img src="/assets/image/logo.svg" alt="Kira-Kira Juku">
                 </a>
             </div>
             <div id="hamburger-button" class="hamburger-button">
@@ -42,15 +42,15 @@
             <nav class="navigation-group">
                 <ul class="navigation-menu">
                     <li class="navigation-item">
-                        <img src="/assets/image/arrow-right-white.svg" alt="">
+                        <img src="/assets/image/arrow_right_white.svg" alt="">
                         <a href="#reason">選ばれる3つの理由</a>
                     </li>
                     <li class="navigation-item">
-                        <img src="/assets/image/arrow-right-white.svg" alt="">
+                        <img src="/assets/image/arrow_right_white.svg" alt="">
                         <a href="#course">コース・目的</a>
                     </li>
                     <li class="navigation-item">
-                        <img src="/assets/image/arrow-right-white.svg" alt="">
+                        <img src="/assets/image/arrow_right_white.svg" alt="">
                         <a href="#cost">費用</a>
                     </li>
                 </ul>
@@ -66,7 +66,7 @@
         <div class="main-visual-container">
             <div class="main-visual-pickup">
                 <div class="main-visual-pickup-frame-left">
-                    <img width="25" height="69" src="/assets/image/frame-left.png" alt="">
+                    <img width="25" height="69" src="/assets/image/frame_left.png" alt="">
                 </div>
                 <div class="main-visual-pickup-wrapper">
                     <div class="main-visual-pickup-text">
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="main-visual-pickup-frame-right">
-                    <img width="25" height="69" src="/assets/image/frame-right.png" alt="">
+                    <img width="25" height="69" src="/assets/image/frame_right.png" alt="">
                 </div>
             </div>
             <h1 class="main-visual-text-content">
@@ -107,8 +107,12 @@
         <div class="reason-group">
             <div class="reason-item">
                 <div class="reason-img">
-                    <img width="560" height="346" src="/assets/image/reason01.jpg" alt="">
+                    <picture >
+                        <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_01.jpg">
+                        <img width="343" height="220" src="/assets/image/reason_sp_01.jpg" alt="">
+                    </picture>
                 </div>
+
                 <div class="reason-contents">
                     <div class="reason-point point1 c-title-point">point<span> 1</span></div>
                     <h3 class="reason-content-title reason-title1 c-title-level3">実績のある講師陣だから安心</h3>
@@ -120,7 +124,10 @@
 
             <div class="reason-item">
                 <div class="reason-img">
-                    <img width="560" height="346" src="/assets/image/reason02.jpg" alt="">
+                    <picture >
+                        <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_02.jpg">
+                        <img width="343" height="220" src="/assets/image/reason_sp_02.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="reason-contents">
                     <div class="reason-point point2 c-title-point">point<span> 2</span></div>
@@ -133,7 +140,10 @@
 
             <div class="reason-item">
                 <div class="reason-img">
-                    <img width="560" height="346" src="/assets/image/reason03.jpg" alt="">
+                    <picture >
+                        <source media="(min-width: 768px)" srcset="/assets/image/reason_pc_03.jpg">
+                        <img width="343" height="220" src="/assets/image/reason_sp_03.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="reason-contents">
                     <div class="reason-point point3 c-title-point">point<span> 3</span></div>
@@ -170,44 +180,56 @@
                     <div id="tab-1" class="tab-pane" role="tabpanel">
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource01.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_01.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_01.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
-                                    <p>高校生</p>
+                                    <img src="/assets/image/arrow_right.svg" alt="">
+                                    <p>高卒生</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource02.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_02.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_02.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>高校3年生</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource03.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_03.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_03.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>高校2年生</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource04.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_04.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_04.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>高校1年生</p>
                                 </a>
                             </div>
@@ -216,44 +238,56 @@
                     <div id="tab-2" class="tab-pane" role="tabpanel">
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource05.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_05.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_05.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>難関大学・医学部合格を目指す</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource06.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_06.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_06.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>名門私立大学合格を目指す</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource07.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_07.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_07.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>国公立大学合格を目指す</p>
                                 </a>
                             </div>
                         </div>
                         <div class="tab-content-item">
                             <a href="#" class="tab-content-img">
-                                <img width="532" height="329" src="/assets/image/cource08.jpg" alt="">
+                                <picture >
+                                    <source media="(min-width: 768px)" srcset="/assets/image/cource_pc_08.jpg">
+                                    <img width="343" height="220" src="/assets/image/cource_sp_08.jpg" alt="">
+                                </picture>
                             </a>
                             <div class="tab-content-text">
                                 <a href="#">
-                                    <img src="/assets/image/arrow-right.svg" alt="">
+                                    <img src="/assets/image/arrow_right.svg" alt="">
                                     <p>海外の大学合格を目指す</p>
                                 </a>
                             </div>
@@ -308,8 +342,8 @@
         <div class="footer-link-section">
             <a href="/faq" class="footer-link-item">
                 <picture>
-                    <source media="(min-width: 768px)" class="footer-link-img" srcset="/assets/image/classroom-pc01.jpg">
-                    <img width="390" height="170" class="footer-link-img" src="/assets/image/classroom-sp01.jpg" alt="">
+                    <source media="(min-width: 768px)" class="footer-link-img" srcset="/assets/image/classroom_pc_01.jpg">
+                    <img width="390" height="170" class="footer-link-img" src="/assets/image/classroom_sp_01.jpg" alt="">
                 </picture>
                 <div class="footer-link-text">
                     <p>よくあるご質問</p>
@@ -317,8 +351,8 @@
             </a>
             <a href="/search" class="footer-link-item">
                 <picture >
-                    <source media="(min-width: 768px)"  class="footer-link-img" srcset="/assets/image/classroom-pc02.jpg">
-                    <img width="390" height="170" class="footer-link-img" src="/assets/image/classroom-sp02.jpg" alt="">
+                    <source media="(min-width: 768px)" srcset="/assets/image/classroom_pc_02.jpg">
+                    <img width="390" height="170" class="footer-link-img" src="/assets/image/classroom_sp_02.jpg" alt="">
                 </picture>
                 <div class="footer-link-text">
                     <p>お近くの教室を探す</p>
