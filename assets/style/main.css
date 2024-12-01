@@ -108,10 +108,13 @@ component > button
 }
 @media (min-width:765px) {
     .c-button__cta {
+        display: block;
         max-width: 36rem;
         height: 7.5rem;
         border-radius: 3.8rem;
         font-size: 2.4rem;
+        padding-left: 7.1rem;
+        padding-top: 2.6rem;
     }
 }
 .c-button__header {
@@ -194,7 +197,7 @@ component > cta
 }
 @media (min-width: 768px) {
     .c-cta__msg {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 .c-cta__msg span{
@@ -391,13 +394,13 @@ main-visual
 ------------------------------
 */
 .main-visual {
-    height: 25rem;
     background-image: url(/assets/image/main_visual_sp_01.jpg);
     background-position: -1.5rem center;
     background-repeat: no-repeat;
     margin-top: 7rem;
     background-size: cover;
     aspect-ratio: 375 / 250;
+    width: 100%;
 
 }
 @media (min-width: 768px) {
@@ -422,25 +425,31 @@ main-visual
 }
 .main-visual-pickup {
     margin-bottom: 1.5rem;
+    display: flex;
 }
 @media(min-width:768px) {
     .main-visual-pickup {
-        margin-bottom: 2.2rem;
+        margin-bottom: 2.4rem;
     }
 }
 .main-visual-pickup-wrapper {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .main-visual-pickup-wrapper {
+        margin-left: 2.2rem;
+        margin-right: 1rem;
+    }
 }
 .main-visual-pickup-text {
-    padding-bottom: 1rem;
+    margin-bottom: 0.6rem;
     font-size: 1.1rem;
-    transform: translate(-0.5rem, -0.6rem);
 }
 @media(min-width:768px) {
     .main-visual-pickup-text {
         font-size: 2.0rem;
-        padding-bottom: 3.6rem;
-        transform: translateX(15px);
+        margin-bottom: 0.5rem;
     }
 }
 .main-visual-pickup-point {
@@ -451,13 +460,12 @@ main-visual
     line-height: 1;
     font-family: var(--font-family-en);
     color: var(--color-font-pink);
-    transform: translate(-0.6rem, -1rem);
 }
 @media(min-width:768px) {
     .main-visual-pickup-point {
         font-size: 5.4rem;
-        transform: translate(2.7rem, -2.4rem);
-
+        margin-left: 1.5rem;
+        margin-top: 1rem;
     }
 }
 .main-visual-pickup-point span {
@@ -480,12 +488,11 @@ main-visual
 .main-visual-pickup-frame-right {
     display: inline-block;
     width: 2.6rem;
-    transform: translate(-0.9rem, -0.2rem);
 }
 @media(min-width:768px) {
     .main-visual-pickup-frame-right {
         width: 5.2rem;
-        transform: translate(3.3rem, 0.4rem);
+        margin-left: 0.8rem;
     }
 }
 .main-visual-target {
@@ -494,6 +501,7 @@ main-visual
 @media(min-width:768px) {
     .main-visual-target {
         font-size:3.3rem;
+        line-height: 2;
     }
 }
 .main-visual-announce {
@@ -568,7 +576,7 @@ reason
     }
 }
 .reason-group {
-    margin: 0 1.6rem 3rem;
+    margin: 0 1.6rem 3.2rem;
 }
 @media (min-width: 768px) {
     .reason-group {
@@ -638,7 +646,7 @@ reason
     margin-bottom: 0.7rem;
 }
 .reason-text {
-    margin-bottom: 3.6rem;
+    margin-bottom: 3.4rem;
 }
 .reason-item:nth-of-type(3) .reason-text {
     margin-bottom: 0;
@@ -651,6 +659,9 @@ reason
     .reason-item:nth-of-type(2) {
         margin-bottom: 4.7rem;
     }
+}
+.reason-item:nth-of-type(3) .reason-point {
+    margin-bottom: 1rem;
 }
 /*!
 course
@@ -669,6 +680,11 @@ course
     column-gap: 1.5rem;
     flex-direction: row !important;
 }
+@media (min-width:768px) {
+    .tab.st > .nav {
+        column-gap: 3.3rem;
+    }
+}
 .tab.st-theme-basic > .nav {
     box-shadow: none;
 }
@@ -681,7 +697,8 @@ course
 }
 @media (min-width:768px) {
     .tab.st-theme-basic > .nav .nav-link {
-        padding: 3.4rem 0 2.6rem;
+        padding: 2.9rem 0 2.6rem;
+        width: 56rem;
     }
 }
 .tab.st-theme-basic > .nav .nav-link.active {
@@ -713,7 +730,7 @@ course
 }
 @media (min-width: 768px) {
     .course-section {
-        margin: 7.9rem auto 7.1rem;
+        margin: 7.9rem auto 7.4rem;
         width: 100%;
         max-width: 120rem;
     }
@@ -724,7 +741,7 @@ course
 }
 @media (min-width: 768px) {
     .course-title {
-        margin-bottom: 3.7rem;
+        margin-bottom: 3.9rem;
         margin-left: 0;
     }
 }
@@ -742,7 +759,7 @@ course
 }
 @media (min-width: 768px) {
     .tab-container {
-        padding: 2.5rem 3.2rem 0.6rem;
+        padding: 3rem 3.2rem 0.6rem;
         border-radius: 0 0 1.2rem 1.2rem;
     }
 }
@@ -787,7 +804,12 @@ course
     width: 1.38rem;
     margin-right: 0.5rem;
     margin-bottom: 0.4rem;
-
+}
+@media (min-width: 768px) {
+    .tab-content-text img {
+        width: 1.68rem;
+        margin-right: 1rem;
+    }
 }
 .tab-content-text p {
     font-size: 2rem;
@@ -809,6 +831,11 @@ cost
 .cost-title {
     padding-left: 2.3rem;
     letter-spacing: 0.6rem;
+}
+@media (min-width:768px) {
+    .cost-title {
+        padding-left: 0.6rem;
+    }
 }
 .cost-table {
     margin-top: 2.5rem;
@@ -832,25 +859,61 @@ cost
 .cost-table-column:nth-of-type(4) {
     padding-left: 1rem;
 }
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(4) {
+        padding-left: 1.8rem;
+    }
+}
 .cost-table-column:nth-of-type(5) {
     padding-left:1.5rem;
     padding-top: 1.9rem;
 }
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(5) {
+        padding-left: 1.8rem;
+        padding-top: 2.3rem;
+    }
+}
+
 .cost-table-column:nth-of-type(6) {
     padding-left:1.5rem;
     padding-top: 1.9rem;
+}
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(6) {
+        padding-left: 1.8rem;
+        padding-top: 2.3rem;
+    }
 }
 .cost-table-column:nth-of-type(8) {
     padding-left:1.5rem;
     padding-top: 1.9rem;
 }
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(8) {
+        padding-left: 1.8rem;
+        padding-top: 2.3rem;
+    }
+}
 .cost-table-column:nth-of-type(10) {
     padding-left:1.2rem;
     padding-top: 1.7rem;
 }
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(10) {
+        padding-left: 1.8rem;
+        padding-top: 2.3rem;
+    }
+}
 .cost-table-column:nth-of-type(12) {
     padding-left:1.2rem;
     padding-top: 1.7rem;
+}
+@media (min-width: 768px) {
+    .cost-table-column:nth-of-type(12) {
+        padding-left: 1.8rem;
+        padding-top: 2.3rem;
+    }
 }
 .cost-table-column:nth-of-type(14) {
     padding-left:3.3rem;
@@ -898,6 +961,7 @@ cost
     }
     .cost-table-column.table-header:nth-of-type(2) {
         border-left: 1px solid var(--color-border-light-grey);
+        padding: 2.3rem 2rem 2.3rem 1.7rem;
     }
 }
 /*!
@@ -978,4 +1042,8 @@ footer-body
     font-weight: normal;
     margin-left: 1.4rem;
 }
-
+@media (min-width: 768px) {
+    .footer-copyright {
+        margin-left: 0;
+    }
+}
